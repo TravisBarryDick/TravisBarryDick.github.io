@@ -1,0 +1,14 @@
+<html><head><title>Rainbow Rider Level Creator</title><style>body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .canvas-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* This will take the full viewport height */
+      }
+      #canvas {
+        border-width: 6px;
+        border-color: #1b1b1b;
+        border-style: solid;
+      }</style><script defer="defer" src="level_creator.bundle.js"></script></head><body bgcolor="#EEE"><div class="canvas-wrapper"><center>message: <input id="message" value="" style="width: 500px"/><br/>size: <input id="level_width" style="width: 80px" value="5"/> x <input id="level_height" style="width: 80px" value="5"/> <input type="button" value="set" onclick="set_level_size()"/><br/><canvas id="canvas"></canvas><br/><div style="padding-top: 15px">Color Picker:</div><canvas id="color_selector" width="200" height="200"></canvas><input type="button" value="Serialize Level" onclick="serialize()"/><div style="text-align: left"><b>click</b>: set tile color.<br/><b>click+g</b>: set goal position.<br/><b>click+s</b>: set start position.<br/><b>click+o</b>: set orb at position.<br/><b>click+d</b>: delete orb at position.<br/><b>drag+a</b>: rainbow drag clockwise.<br/><b>drag+z</b>: rainbow drag counter-clockwise.<br/></div></center></div></body></html>

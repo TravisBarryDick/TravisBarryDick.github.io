@@ -1,0 +1,14 @@
+<html><head><title>Rainbow Rider</title><style>body {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .canvas-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh; /* This will take the full viewport height */
+      }
+      #canvas {
+        border-width: 6px;
+        border-color: #1b1b1b;
+        border-style: solid;
+      }</style><script defer="defer" src="game.bundle.js"></script></head><body bgcolor="#EEE"><div class="canvas-wrapper"><center><div id="win_message" style="visibility: hidden"><h2>\o/ Level Complete \o/</h2></div><div id="message"></div><br/><canvas id="canvas"></canvas><br/><div id="color_wheel_div" style="visibility: hidden"><div style="padding-top: 40px; padding-bottom: 10px">Colors you can move to:</div><canvas id="color_wheel" width="100" height="100"></canvas></div><div style="padding-top: 40px"><input type="button" value="Restart Level" onclick="restart_level()"/></div></center></div></body></html>
